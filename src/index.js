@@ -33,7 +33,7 @@ function Train() {
                   <Link to="/passenger">Passenger</Link>      
                   <Link to="/train">Train</Link> 
                   <Link to="/ticket">Ticket</Link> 
-                  <Link to="/cancellation">Cancellation|</Link>
+                  <Link to="/cancellation">TICKET Cancellation|</Link>
                   </ul>
                   <Switch>
         <Route path="/train">
