@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './PassengerForm';
+import FormCan from './Cancel'
 import reportWebVitals from './reportWebVitals';
 import Form from './forms'
 import './index.css';
@@ -32,6 +33,7 @@ function Train() {
                   <Link to="/passenger">Passenger</Link>      
                   <Link to="/train">Train</Link> 
                   <Link to="/ticket">Ticket</Link> 
+                  <Link to="/cancellation">Cancellation|</Link>
                   </ul>
                   <Switch>
         <Route path="/train">
@@ -43,6 +45,9 @@ function Train() {
         <Route path="/passenger">
           <Form/>
         </Route>
+        <Route path="/cancellation">
+          <FormCan/>
+          </Route>
         </Switch>
     </div>
   </Router>

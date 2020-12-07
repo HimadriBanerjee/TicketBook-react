@@ -11,7 +11,6 @@ export default class FormCan extends React.Component {
     idChangeHandler = (event) => {
         this.setState({ticketID: event.target.value});
     }
-
     submitHandler = (event) => {
         event.preventDefault();
         axios.delete('http://localhost:8080/Delete/ticket/ticketID'+this.state.ticketID)

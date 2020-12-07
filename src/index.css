@@ -3,6 +3,7 @@ body {
     margin: 1;
     padding-left: 60px;
     background-color: aqua;
+    -webkit-font-smoothing: antialiased;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
