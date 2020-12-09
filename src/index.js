@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './PassengerForm';
-import FormCan from './Cancel'
+import FormCan from './Cancel';
+import FormEq from './Inquiry';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Button from 'react-bootstrap/Button';
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -14,6 +17,7 @@ function Train() {
     return (
       <h3 className="train">Train</h3>
     )
+}
     function Passenger() {
         return (
           <h3 className="passenger">Passenger</h3>
@@ -33,10 +37,10 @@ function Train() {
         return (<Router>
           <div>
               <ul>
-                  <Link to="/passenger">Passenger</Link>      
-                  <Link to="/train">Train</Link> 
-                  <Link to="/ticket">Ticket</Link> 
-                  <Link to="/cancellation">TICKET Cancellation|</Link>
+              <Link to="/passenger"><Button variant="/passenger">Passenger Booking</Button>{ '---->'}</Link>           
+              <Link to="/train"><Button variant="/train">TrainList</Button>{ '---->'}</Link>
+              <Link to="/ticket"><Button variant="/ticket">TicketDetails</Button>{ '---->'}</Link>
+              <Link to="/cancellation"><Button variant="/cancellation">Cancellation</Button></Link>
                   </ul>
                   <Switch>
         <Route path="/train">
@@ -60,4 +64,3 @@ ReactDOM.render(
     <Default />,
     document.getElementById('root')
   );
-}
