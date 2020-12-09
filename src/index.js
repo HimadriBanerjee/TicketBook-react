@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Form from './PassengerForm';
 import FormCan from './Cancel'
 import reportWebVitals from './reportWebVitals';
-import Form from './forms'
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -11,7 +10,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-<meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
 function Train() {
     return (
       <h3 className="train">Train</h3>
@@ -25,6 +23,11 @@ function Train() {
         return (
           <h2>Ticket</h2>
         )
+      }
+        function cancellation() {
+          return (
+            <h2>cancellation</h2>
+          )
       }
       function Default() {
         return (<Router>

@@ -3,7 +3,16 @@ body {
     margin: 1;
     padding-left: 60px;
     background-color: aqua;
+    background-attachment: scroll;
+    background-size: cover;
+    backdrop-filter: blur (500px);
+    text-decoration-color: rgb(3, 23, 39);
+    color:rgb(45, 4, 73);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: rgba(15, 15, 165, 0.952);
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
